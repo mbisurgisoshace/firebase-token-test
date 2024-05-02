@@ -1,7 +1,7 @@
 import { User, onAuthStateChanged } from "firebase/auth";
 import { useState, createContext, useEffect, useContext } from "react";
 
-import { auth } from "@/db/firebase";
+import { auth } from "../db/firebase";
 
 const AuthContext = createContext<{
   isLoading: boolean;
